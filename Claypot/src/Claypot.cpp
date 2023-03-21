@@ -13,3 +13,4 @@ class Claypot : public Rupee::Application {
 Rupee::Application* Rupee::CreateApplication() {
     return new Claypot;
 }
+

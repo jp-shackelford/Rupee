@@ -39,7 +39,7 @@ project "Rupee"
         }
 
         postbuildcommands {
-            "cp -f %{cfg.buildtarget.abspath} ~/Workspace/Rupee/bin/" .. OUTPUTDIR .. "/Claypot"
+            "{COPYFILE} %{cfg.buildtarget.abspath} ../bin/" .. OUTPUTDIR .. "/Claypot"
         }
 
     filter "configurations:Debug"
@@ -99,3 +99,4 @@ project "Claypot"
         defines "RP_DIST"
         runtime "Release"
         optimize "On"    
+

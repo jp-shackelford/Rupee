@@ -21,6 +21,14 @@ Rupee                               # Project folder
     └───vendor                      # External Libs
 ```
 
+## Dependencies
+
+Rupee is developed on Windows 11 and currently only supports Windows.
+
+Required tools include either of:
+ * `GNU make` and `mingw_64`
+ * Microsoft Visual Studio
+
 ## Generate Build Files
 
 Rupee uses [premake](https://premake.github.io/) to generate its build files, the executable for which is located in the `vendor` directory.
@@ -32,3 +40,4 @@ Premake can generate build files for Visual Studio, GNU Make, or XCode compilers
 
 ---
 _Based on [Hazel](https://github.com/TheCherno/Hazel)_
+
